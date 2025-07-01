@@ -3,7 +3,7 @@ import { ReadOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 
-const { Content, Footer, Sider } = Layout;
+const { Content, Sider } = Layout;
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -84,9 +84,6 @@ const PageLayout: React.FC = () => {
             {renderContent()}
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>
-          Logicoding
-        </Footer>
       </Layout>
     </Layout>
   );
