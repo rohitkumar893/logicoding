@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -67,3 +68,15 @@ export default tseslint.config([
   },
 ])
 ```
+=======
+# 🧠 Logicoding – The Online Learning Platform for Developers
+
+Welcome to Logicoding – your one-stop learning platform for development fundamentals. Whether you're a beginner or brushing up your skills, this platform offers concise, organized, and easy-to-understand notes on the technologies every developer needs to know.
+
+---
+
+## 🚀 Features
+
+- 📘 Structured notes for programming languages, tools, frameworks and libraries.
+---
+>>>>>>> 993827efa09d03ed9ff32a554512fc1f2e12f597
