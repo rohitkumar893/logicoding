@@ -1,17 +1,15 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import PageLayout from './components/Layout'
-import { Layout } from 'antd';
-const { Footer } = Layout;
+import LayoutFooter from './components/Footer'
+
 
 function App() {
   return (
     <>
       <Navbar />
       <PageLayout />
-      <Footer style={{ textAlign: 'center' }}>
-          Logicoding
-      </Footer>
+      <LayoutFooter />
     </>
   )
 }
