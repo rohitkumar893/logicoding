@@ -36,7 +36,6 @@ const items: MenuItem[] = [
 ];
 
 const PageLayout: React.FC = () => {
-  const [collapsed, setCollapsed] = useState(false);
   const [selectedKey, setSelectedKey] = useState<string>('react-install');
 
   const {
@@ -55,7 +54,7 @@ const PageLayout: React.FC = () => {
 
   return (
     <Layout style={{ minHeight: '100vh' }} className='pt-[80px]'>
-      <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)} style={{ background: colorBgContainer }}>
+      <Sider style={{ background: colorBgContainer }}>
         <div className="demo-logo-vertical" />
         <Menu
           theme="light"
