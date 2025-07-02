@@ -9,7 +9,7 @@ const ReactTutorials: React.FC<Props> = ({ selectedKey }) => {
   switch (selectedKey) {
     case 'react-install':
       return <p><b>React Installation:</b>
-        <b>How to Install React</b>
+        {"\u00A0"}<b>How to Install React</b>
         <br /><br />
         Step 1: Install Node.js
                 <br /><br />
@@ -22,15 +22,15 @@ const ReactTutorials: React.FC<Props> = ({ selectedKey }) => {
 
         Step 2: Install React
                 <br /><br />Now you can go ahead and install React into your project. Let's go through the steps together.
-                <br /><br />First, we'll look at the "traditional" way of installing React, using create-react-app (CRA), so you're aware of that process. Then we'll see how to install it using the modern Vite build tool.
-                <br /><br /><b>Using CRA</b>
+                <br /><br />First, we'll look at the "traditional" way of installing React, using create-react-app (CRA), so you're aware of that process. Then we'll see how to install it using the modern Vite build tool.<br /><br />
+                <br /><br /><b>Using CRA</b><br /><br />
                 Still in your command prompt window, navigate to the directory that you want to use in creating your React project. To do this, type cd [directory name] then click enter.<br /><br />
                 In the documents directory (or wherever you're creating your project), create a folder that you will be using to create your React app. Type mkdir [folder name]then navigate to the newly created directory using cd [newly created folder name].<br /><br />
 
                 In the newly created folder directory, type in npx create-react-app [project name of your choice], and then wait until your React project is completely created.<br /><br />
                 Lastly, open the React project in your code editor by typing in code . . Your code editor<br /><br />
 
-                <b>Using Vite</b><br /><br />
+                <br /><br /><b>Using Vite</b><br /><br />
                 Vite is a very fast and customizable modern tool that aims to provide a linear development experience for modern web projects. You can use it to create your React apps in a fast and reliable way. It also has the same features as create-react-app (CRA).<br /><br />
                 Just as we did when installing React using CRA, the first step is to make sure you have Node installed on your computer. After that, navigate to the directory you want to use and create a new folder (with any name of your choice).<br /><br />
                 Open the newly created folder in your code editor (VS code).<br /><br />
