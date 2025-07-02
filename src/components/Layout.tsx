@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { ReadOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import ReactTutorials from './ReactTutorials';
+import NodeTutorials from './NodeTutorials';
 
 const { Content, Sider } = Layout;
 
@@ -41,22 +43,15 @@ const PageLayout: React.FC = () => {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
 
-  const renderContent = () => {
-    switch (selectedKey) {
-      case 'react-install':
-        return <p><b>React Installation:</b></p>;
-      case 'react-setup':
-        return <p><b>React Setup:</b></p>;
-      case 'react-components':
-        return <p><b>React Components:</b></p>;
-      case 'node-basics':
-        return <p><b>Node.js Basics:</b></p>;
-      case 'node-modules':
-        return <p><b>Node Modules:</b></p>;
-      default:
-        return <p></p>;
-    }
-  };
+   const renderContent = () => {
+      if (selectedKey.startsWith('react')) {
+        return <ReactTutorials selectedKey={selectedKey} />;
+      } else if (selectedKey.startsWith('node')) {
+        return <NodeTutorials selectedKey={selectedKey} />;
+      } else {
+        return <p>Select a topic</p>;
+      }
+    };
 
   return (
     <Layout style={{ minHeight: '100vh' }} className='pt-[80px]'>
