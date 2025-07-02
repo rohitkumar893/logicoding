@@ -4,8 +4,8 @@ const { Footer } = Layout;
 
 const LayoutFooter:React.FC = () => {
   return (
-    <Footer style={{ textAlign: 'center' }}>
-          Logicoding
+    <Footer className='text-center'>
+          <h2 className='text-lg text-gray-700'>Logicoding</h2>
       </Footer>
   )
 }
