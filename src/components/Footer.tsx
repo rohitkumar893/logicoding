@@ -5,8 +5,8 @@ const { Footer } = Layout;
 const LayoutFooter:React.FC = () => {
   return (
     <Footer className='text-center'>
-          <h2 className='text-lg text-gray-700'>Logicoding</h2>
-      </Footer>
+        <h2 className='text-lg text-gray-700'>Logicoding • 2025</h2>
+    </Footer>
   )
 }
 
