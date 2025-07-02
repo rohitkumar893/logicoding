@@ -8,7 +8,7 @@ interface Props {
 const ReactTutorials: React.FC<Props> = ({ selectedKey }) => {
   switch (selectedKey) {
     case 'react-install':
-      return <p><b>React Installation:</b>
+      return <p className='text-xl'><b>React Installation:</b>
         {"\u00A0"}<b>How to Install React</b>
         <br /><br />
         Step 1: Install Node.js
